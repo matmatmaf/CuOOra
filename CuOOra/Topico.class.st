@@ -9,6 +9,11 @@ Class {
 	#category : #CuOOra
 }
 
+{ #category : #initialize }
+Topico class >> crear: unNombre descripcion: unaDescripcion [
+	^ self new nombre: unNombre descripcion: unaDescripcion yourself
+]
+
 { #category : #accessors }
 Topico >> getPreguntas [ 
 	^ preguntas
