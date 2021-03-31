@@ -84,6 +84,8 @@ Usuario >> initialize [
 
 { #category : #accessing }
 Usuario >> quitarPregunta: unaPregunta [
+	unaPregunta getRespuestas do: [ :r | respuestas remove: r ].
+	unaPregunta eliminar.
 	preguntas remove: unaPregunta
 ]
 

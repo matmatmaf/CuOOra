@@ -24,3 +24,8 @@ Topico >> nombre: unNombre descripcion: unaDescripcion [
 	nombre := unNombre.
 	descripcion := unaDescripcion .
 ]
+
+{ #category : #accessors }
+Topico >> quitarPregunta: unaPregunta [
+	preguntas remove: unaPregunta
+]
